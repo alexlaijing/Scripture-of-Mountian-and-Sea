@@ -1,3 +1,8 @@
+// 确保 translations 对象存在
+if (typeof window.translations === 'undefined') {
+    window.translations = {};
+}
+
 const translations = {
     'zh': {
         'nav': {
@@ -261,5 +266,5 @@ const translations = {
     }
 };
 
-// 将翻译数据赋值给 window.translations
-window.translations = translations; 
+// 将翻译数据合并到全局对象中
+Object.assign(window.translations, translations); 

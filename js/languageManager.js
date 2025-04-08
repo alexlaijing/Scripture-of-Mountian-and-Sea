@@ -3,27 +3,30 @@ class LanguageManager {
         this.currentLang = 'en'; // 默认使用英文
         this.supportedLangs = ['zh', 'en', 'ko', 'ja'];
         this.translations = window.translations || {};
-        this.init();
     }
 
     init() {
-        // 获取用户保存的语言偏好
-        const savedLang = localStorage.getItem('preferred_language');
-        if (savedLang && this.supportedLangs.includes(savedLang)) {
-            this.currentLang = savedLang;
-        } else {
-            // 获取浏览器语言
-            const browserLang = navigator.language.split('-')[0];
-            // 如果浏览器语言在支持的语言列表中，使用浏览器语言
-            // 否则默认使用英文
-            this.currentLang = this.supportedLangs.includes(browserLang) ? browserLang : 'en';
-        }
+        try {
+            // 获取用户保存的语言偏好
+            const savedLang = localStorage.getItem('preferred_language');
+            if (savedLang && this.supportedLangs.includes(savedLang)) {
+                this.currentLang = savedLang;
+            } else {
+                // 获取浏览器语言
+                const browserLang = navigator.language.split('-')[0];
+                // 如果浏览器语言在支持的语言列表中，使用浏览器语言
+                // 否则默认使用英文
+                this.currentLang = this.supportedLangs.includes(browserLang) ? browserLang : 'en';
+            }
 
-        // 创建语言选择器
-        this.createLanguageSelector();
-        
-        // 更新页面内容
-        this.updateContent();
+            // 创建语言选择器
+            this.createLanguageSelector();
+            
+            // 更新页面内容
+            this.updateContent();
+        } catch (error) {
+            console.error('Language manager initialization failed:', error);
+        }
     }
 
     createLanguageSelector() {
@@ -124,7 +127,13 @@ class LanguageManager {
     }
 }
 
-// 初始化语言管理器
-document.addEventListener('DOMContentLoaded', () => {
+// 等待 DOM 完全加载后再初始化
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => {
+        window.langManager = new LanguageManager();
+        window.langManager.init();
+    });
+} else {
     window.langManager = new LanguageManager();
-}); 
+    window.langManager.init();
+} 

@@ -212,9 +212,13 @@
     </button>
 
     <!-- 引入语言相关脚本 -->
+    <script>
+        // 确保 translations 对象在全局作用域可用
+        window.translations = {};
+    </script>
     <script src="js/languages.js"></script>
     <script src="js/languageManager.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 
     <!-- 视频播放弹窗 -->
     <div class="video-modal">
