@@ -32,7 +32,7 @@ class LanguageManager {
         
         const currentLangBtn = document.createElement('button');
         currentLangBtn.className = 'current-lang';
-        currentLangBtn.innerHTML = this.getLangDisplayName(this.currentLang);
+        currentLangBtn.textContent = this.getLangDisplayName(this.currentLang);
         
         const dropdown = document.createElement('div');
         dropdown.className = 'lang-dropdown';
@@ -43,7 +43,9 @@ class LanguageManager {
             option.textContent = this.getLangDisplayName(lang);
             option.onclick = (e) => {
                 e.preventDefault();
+                e.stopPropagation();
                 this.setLanguage(lang);
+                dropdown.classList.remove('show');
             };
             dropdown.appendChild(option);
         });
@@ -53,18 +55,19 @@ class LanguageManager {
         
         // 添加到导航栏
         const navLinks = document.querySelector('.nav-links');
-        navLinks.appendChild(langSelector);
+        if (navLinks) {
+            navLinks.appendChild(langSelector);
+        }
         
         // 添加点击事件
-        currentLangBtn.addEventListener('click', () => {
+        currentLangBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
             dropdown.classList.toggle('show');
         });
         
         // 点击其他地方关闭下拉菜单
-        document.addEventListener('click', (e) => {
-            if (!langSelector.contains(e.target)) {
-                dropdown.classList.remove('show');
-            }
+        document.addEventListener('click', () => {
+            dropdown.classList.remove('show');
         });
     }
 
@@ -83,7 +86,10 @@ class LanguageManager {
             this.currentLang = lang;
             localStorage.setItem('preferred_language', lang);
             this.updateContent();
-            document.querySelector('.current-lang').textContent = this.getLangDisplayName(lang);
+            const currentLangBtn = document.querySelector('.current-lang');
+            if (currentLangBtn) {
+                currentLangBtn.textContent = this.getLangDisplayName(lang);
+            }
         }
     }
 

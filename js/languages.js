@@ -259,4 +259,7 @@ const translations = {
             'rights': '© 2024 ZKMEDIA. All rights reserved.'
         }
     }
-}; 
+};
+
+// 将翻译数据赋值给 window.translations
+window.translations = translations; 
