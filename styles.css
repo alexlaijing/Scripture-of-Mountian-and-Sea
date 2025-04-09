@@ -1014,6 +1014,50 @@ body.loaded {
         transform: translateY(0px) rotate(-5deg);
     }
 }
+@keyframes float9 {
+    0% {
+        transform: translateY(0px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(15px) rotate(3deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(5deg);
+    }
+}
+@keyframes float10 {
+    0% {
+        transform: translateY(0px) rotate(4deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(6deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(4deg);
+    }
+}
+@keyframes float11 {
+    0% {
+        transform: translateY(0px) rotate(-5deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(-3deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(-5deg);
+    }
+}
+@keyframes float12 {
+    0% {
+        transform: translateY(0px) rotate(5deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(3deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(5deg);
+    }
+}
 
 .portfolio-item:nth-child(1) {
     animation: float 6s ease-in-out infinite;
@@ -1032,15 +1076,35 @@ body.loaded {
 }
 .portfolio-item:nth-child(5) {
     animation: float5 7s ease-in-out infinite;
+    transform: rotate(-3deg);
 }
 .portfolio-item:nth-child(6) {
-    animation: float4 8s ease-in-out infinite;
+    animation: float6 6s ease-in-out infinite;
+    transform: rotate(4deg);
 }
 .portfolio-item:nth-child(7) {
-    animation: float4 5s ease-in-out infinite;
+    animation: float7 8s ease-in-out infinite;
+    transform: rotate(-2deg);
 }
 .portfolio-item:nth-child(8) {
-    animation: float4 7s ease-in-out infinite;
+    animation: float8 7s ease-in-out infinite;
+    transform: rotate(3deg);
+}
+.portfolio-item:nth-child(9) {
+    animation: float9 6s ease-in-out infinite;
+    transform: rotate(-4deg);
+}
+.portfolio-item:nth-child(10) {
+    animation: float10 8s ease-in-out infinite;
+    transform: rotate(2deg);
+}
+.portfolio-item:nth-child(11) {
+    animation: float11 7s ease-in-out infinite;
+    transform: rotate(-3deg);
+}
+.portfolio-item:nth-child(12) {
+    animation: float12 6s ease-in-out infinite;
+    transform: rotate(4deg);
 }
 
 /* 鼠标悬停效果 */

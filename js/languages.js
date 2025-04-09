@@ -47,7 +47,11 @@ const translations = {
                 'lookbook': 'LOOKBOOK拍摄制作',
                 'fresh': '清新短视频展示',
                 'honor': '荣耀耳机',
-                'trend': '潮流预告短视频'
+                'trend': '潮流预告短视频',
+                'digital': '数字人商品简介',
+                'live': '潮流直播预告',
+                'company': '公司品宣',
+                'intro': '片头片尾设计'
             }
         },
         'partners': {
@@ -112,7 +116,11 @@ const translations = {
                 'lookbook': 'LOOKBOOK Production',
                 'fresh': 'Fresh Short Video',
                 'honor': 'Honor Earphones',
-                'trend': 'Trend Preview Video'
+                'trend': 'Trend Preview Video',
+                'digital': 'Digital Human Product Intro',
+                'live': 'Trendy Live Preview',
+                'company': 'Company Promotion',
+                'intro': 'Intro & Outro Design'
             }
         },
         'partners': {
@@ -177,7 +185,11 @@ const translations = {
                 'lookbook': '룩북 촬영 제작',
                 'fresh': '신선한 숏 비디오',
                 'honor': '아너 이어폰',
-                'trend': '트렌드 프리뷰 비디오'
+                'trend': '트렌드 프리뷰 비디오',
+                'digital': '디지털 휴먼 제품 소개',
+                'live': '트렌디한 라이브 프리뷰',
+                'company': '회사 홍보',
+                'intro': '인트로 & 아웃트로 디자인'
             }
         },
         'partners': {
@@ -242,7 +254,11 @@ const translations = {
                 'lookbook': 'ルックブック撮影制作',
                 'fresh': 'フレッシュショートビデオ',
                 'honor': 'Honorイヤホン',
-                'trend': 'トレンドプレビュービデオ'
+                'trend': 'トレンドプレビュービデオ',
+                'digital': 'デジタルヒューマン商品紹介',
+                'live': 'トレンディーライブ予告',
+                'company': '会社プロモーション',
+                'intro': 'イントロ＆アウトロデザイン'
             }
         },
         'partners': {

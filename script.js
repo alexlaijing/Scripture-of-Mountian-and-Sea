@@ -130,7 +130,16 @@ window.addEventListener('scroll', () => {
             itemSpeed = 0.35; // 中上项目
         } else if (index === 8) {
             itemSpeed = 0.45; // 中上项目
+        }else if (index === 9) {
+            itemSpeed = 0.35; // 右下项目
+        } else if (index === 10) {
+            itemSpeed = 0.45; // 中上项目
+        } else if (index === 11) {
+            itemSpeed = 0.25; // 中上项目
+        } else if (index === 12) {
+            itemSpeed = 0.55; // 中上项目
         }
+        
         
         // 计算垂直位置变化
         const yPos = -(scrolled * itemSpeed);
