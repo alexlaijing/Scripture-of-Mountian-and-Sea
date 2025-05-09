@@ -29,8 +29,8 @@ const translations = {
                 'desc': '从粗剪到精修，融合特效、调色、音效等全流程服务'
             },
             'tvc': {
-                'title': 'TVC\n广告制作',
-                'desc': '专注于高品质电视广告、品牌宣传片及商业视频制作'
+                'title': 'AIGC\n视频设计',
+                'desc': '深耕AIGC、探索AI视频商用设计所有可能'
             },
             'creative': {
                 'title': '国际化\n创意支持',
@@ -98,8 +98,8 @@ const translations = {
                 'desc': 'From rough cut to final polish, including effects, color grading, and sound design'
             },
             'tvc': {
-                'title': 'TVC\nProduction',
-                'desc': 'Specializing in high-quality TV commercials, brand videos and commercial production'
+                'title': 'AIGC\nVideo Design',
+                'desc': 'Deeply engaged in AIGC, exploring all possibilities of AI video commercial design'
             },
             'creative': {
                 'title': 'International\nCreative Support',
@@ -167,8 +167,8 @@ const translations = {
                 'desc': '러프 컷부터 최종 편집까지, 효과, 컬러 그레이딩, 사운드 디자인 포함'
             },
             'tvc': {
-                'title': 'TVC\n제작',
-                'desc': '고품질 TV 광고, 브랜드 비디오 및 상업용 영상 제작 전문'
+                'title': 'AIGC\n영상 디자인',
+                'desc': 'AIGC에 집중, AI 영상 상업 디자인의 모든 가능성 탐구'
             },
             'creative': {
                 'title': '국제\n크리에이티브 지원',
@@ -236,8 +236,8 @@ const translations = {
                 'desc': 'ラフカットから最終編集まで、エフェクト、カラーグレーディング、サウンドデザインを含む'
             },
             'tvc': {
-                'title': 'TVC\n制作',
-                'desc': '高品質なTVCM、ブランドビデオ、商業ビデオ制作の専門'
+                'title': 'AIGC\n動画デザイン',
+                'desc': 'AIGCに注力し、AI動画商用デザインのあらゆる可能性を探求'
             },
             'creative': {
                 'title': '国際\nクリエイティブサポート',
