@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="baidu-site-verification" content="codeva-I3pnxs5qXy" />
     <title>智凯传媒-专业视频设计服务 | International Video Design | 국제 영상 디자인 | 国際動画デザイン</title>
-    <meta name="description" content="智凯传媒专注于国际化视频制作、短视频剪辑、AIGC视频设计、创意内容输出，为全球客户提供高效优质的一站式视频解决方案。ZK Media provides international video production, short video editing, AIGC video design, and creative content for global clients. 지카이 미디어는 국제 영상 제작, 숏폼 편집, AIGC 영상 디자인, 창의적 콘텐츠를 제공합니다. 智凱メディアは国際動画制作、ショート動画編集、AIGC動画デザイン、クリエイティブコンテンツを提供します。">
+    <meta name="description" content="智凯传媒专注于国际化视频制作、短视频剪辑、AIGC视频设计、创意内容输出，为全球客户提供高效优质的一站式视频解决方案。ZK Media provides international video production, short video editing, AIGC video design, and creative content for global clients. 지카이 미디어는 국제 영상 제작, 숏폼 편집, AIGC 영상 디자인, 창의적 콘텐츠를 제공합니다. 智凱メディア는国際動画制作、ショート動画編集、AIGC動画デザイン、クリエイティブコンテンツを提供します。">
     <meta name="keywords" content="视频制作, 视频剪辑, AIGC视频, 国际化视频, 创意视频, 宣传片, 广告视频, 海外视频, 智凯传媒, 视频设计, 视频服务, video production, video editing, AIGC video, international video, creative video, promo video, advertising video, overseas video, ZK Media, video design, video service, 영상 제작, 영상 편집, AIGC 영상, 국제 영상, 창의적 영상, 홍보 영상, 광고 영상, 해외 영상, 지카이 미디어, 영상 디자인, 영상 서비스, 動画制作, 動画編集, AIGC動画, 国際動画, クリエイティブ動画, プロモ動画, 広告動画, 海外動画, 智凱メディア, 動画デザイン, 動画サービス">
     <!-- Open Graph 多语言 -->
     <meta property="og:title" content="智凯传媒-专业视频设计服务 | International Video Design | 국제 영상 디자인 | 国際動画デザイン">
@@ -276,7 +276,16 @@
             <div class="footer-section">
                 <h4 data-i18n="footer.contact">联系方式</h4>
                 <p><span data-i18n="footer.email">邮箱</span>：cchunn526@gmail.com</p>
-                <p><span data-i18n="footer.phone">电话</span>：+86 188 2343 0534</p>
+                <p><span data-i18n="footer.phone">电话</span>：<span class="footer-phone-list">
+                    +44 7933 229177<br><span style="padding-left: 5.2em;">+86 188 2343 0534</span>
+                </span></p>
+            </div>
+            <div class="footer-section">
+                <h4 data-i18n="footer.scan">扫码联系</h4>
+                <div class="social-qr-icons">
+                    <img src="images/whatsapp-icon.png" alt="WhatsApp" class="qr-icon" id="whatsapp-qr-btn" style="width:32px;height:32px;cursor:pointer;margin-right:10px;">
+                    <img src="images/wechat-icon.png" alt="微信" class="qr-icon" id="wechat-qr-btn" style="width:32px;height:32px;cursor:pointer;">
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
@@ -308,5 +317,88 @@
             </video>
         </div>
     </div>
+    <!-- 二维码弹窗 -->
+    <div class="qr-modal" id="qr-modal" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(0,0,0,0.6);align-items:center;justify-content:center;">
+        <div style="background:#fff;padding:24px 24px 12px 24px;border-radius:12px;position:relative;max-width:90vw;max-height:90vh;display:flex;flex-direction:column;align-items:center;">
+            <span id="close-qr-modal" style="position:absolute;top:8px;right:16px;font-size:28px;cursor:pointer;">&times;</span>
+            <img id="qr-image" src="" alt="二维码" style="max-width:300px;max-height:60vh;">
+            <div id="qr-label" style="margin-top:8px;font-size:16px;color:#333;"></div>
+        </div>
+    </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var qrModal = document.getElementById('qr-modal');
+        var qrImage = document.getElementById('qr-image');
+        var qrLabel = document.getElementById('qr-label');
+        var closeBtn = document.getElementById('close-qr-modal');
+        var whatsappBtn = document.getElementById('whatsapp-qr-btn');
+        var wechatBtn = document.getElementById('wechat-qr-btn');
+        // 获取当前语言
+        function getCurrentLang() {
+            if(window.langManager && window.langManager.currentLang) return window.langManager.currentLang;
+            var lang = document.documentElement.lang;
+            if(['zh','en','ko','ja'].includes(lang)) return lang;
+            return 'zh';
+        }
+        // 获取二维码label多语言
+        function getQrLabel(type) {
+            var lang = getCurrentLang();
+            var translations = window.translations || {};
+            if(translations[lang] && translations[lang].footer && translations[lang].footer.qr && translations[lang].footer.qr[type]) {
+                return translations[lang].footer.qr[type];
+            }
+            // fallback
+            return type === 'whatsapp' ? '二维码' : '二维码';
+        }
+        // 获取扫码联系标题多语言
+        function getScanTitle() {
+            var lang = getCurrentLang();
+            var translations = window.translations || {};
+            if(translations[lang] && translations[lang].footer && translations[lang].footer.scan) {
+                return translations[lang].footer.scan;
+            }
+            return '扫码联系';
+        }
+        if (whatsappBtn) {
+            whatsappBtn.onclick = function() {
+                qrImage.src = 'images/whatsapp-qr.png';
+                qrLabel.textContent = getQrLabel('whatsapp');
+                qrModal.style.display = 'flex';
+            };
+        }
+        if (wechatBtn) {
+            wechatBtn.onclick = function() {
+                qrImage.src = 'images/wechat-qr.png';
+                qrLabel.textContent = getQrLabel('wechat');
+                qrModal.style.display = 'flex';
+            };
+        }
+        if (closeBtn) {
+            closeBtn.onclick = function() {
+                qrModal.style.display = 'none';
+            };
+        }
+        qrModal.addEventListener('click', function(e) {
+            if (e.target === qrModal) {
+                qrModal.style.display = 'none';
+            }
+        });
+        // 监听语言切换，自动更新扫码联系标题
+        function updateScanTitle() {
+            var scanTitle = document.querySelector('[data-i18n="footer.scan"]');
+            if(scanTitle) {
+                scanTitle.textContent = getScanTitle();
+            }
+        }
+        if(window.langManager) {
+            var origUpdateContent = window.langManager.updateContent.bind(window.langManager);
+            window.langManager.updateContent = function() {
+                origUpdateContent();
+                updateScanTitle();
+            };
+        }
+        updateScanTitle();
+    });
+    </script>
 </body>
 </html> 

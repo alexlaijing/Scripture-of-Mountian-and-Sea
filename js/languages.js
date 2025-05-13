@@ -70,6 +70,11 @@ const translations = {
             'contact': '联系方式',
             'email': '邮箱',
             'phone': '电话',
+            'scan': '扫码联系',
+            'qr': {
+                'whatsapp': 'WhatsApp二维码',
+                'wechat': '微信二维码'
+            },
             'rights': '© 2024 ZKMEDIA. All rights reserved.'
         }
     },
@@ -139,6 +144,11 @@ const translations = {
             'contact': 'Contact',
             'email': 'Email',
             'phone': 'Phone',
+            'scan': 'Scan to Contact',
+            'qr': {
+                'whatsapp': 'WhatsApp QR Code',
+                'wechat': 'WeChat QR Code'
+            },
             'rights': '© 2024 ZKMEDIA. All rights reserved.'
         }
     },
@@ -208,6 +218,11 @@ const translations = {
             'contact': '연락처',
             'email': '이메일',
             'phone': '전화',
+            'scan': 'QR로 연락',
+            'qr': {
+                'whatsapp': 'WhatsApp QR 코드',
+                'wechat': '위챗 QR 코드'
+            },
             'rights': '© 2024 ZKMEDIA. All rights reserved.'
         }
     },
@@ -277,6 +292,11 @@ const translations = {
             'contact': 'お問い合わせ',
             'email': 'メール',
             'phone': '電話',
+            'scan': 'QRで連絡',
+            'qr': {
+                'whatsapp': 'WhatsApp QRコード',
+                'wechat': 'WeChat QRコード'
+            },
             'rights': '© 2024 ZKMEDIA. All rights reserved.'
         }
     }
