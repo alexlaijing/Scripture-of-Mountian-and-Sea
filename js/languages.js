@@ -41,17 +41,18 @@ const translations = {
             'title': '精选作品',
             'clickToPlay': '点击播放视频',
             'items': {
-                'fashion': '时尚短视频展示',
+                'AIGC': 'AI生成产品展示',
                 '3c': '3C产品剪辑后期',
                 'product': '产品宣传片',
                 'lookbook': 'LOOKBOOK拍摄制作',
-                'fresh': '清新短视频展示',
+                'fashion': '原生感数字人口播',
                 'honor': '荣耀耳机',
                 'trend': '潮流预告短视频',
                 'digital': '数字人商品简介',
                 'live': '潮流直播预告',
                 'company': '公司品宣',
-                'intro': '片头片尾设计'
+                'intro': '片头片尾设计',
+                'aicut': 'AIGC产品混剪'
             }
         },
         'partners': {
@@ -115,17 +116,18 @@ const translations = {
             'title': 'Featured Works',
             'clickToPlay': 'Click to play video',
             'items': {
-                'fashion': 'Fashion Short Video',
+                'AIGC': 'AIGC Product Promo',
                 '3c': '3C Product Post-production',
                 'product': 'Product Promo',
                 'lookbook': 'LOOKBOOK Production',
-                'fresh': 'Fresh Short Video',
+                'fashion': 'Native Digital Human Video',
                 'honor': 'Honor Earphones',
                 'trend': 'Trend Preview Video',
                 'digital': 'Digital Human Product Intro',
                 'live': 'Trendy Live Preview',
                 'company': 'Company Promotion',
-                'intro': 'Intro & Outro Design'
+                'intro': 'Intro & Outro Design',
+                'aicut': 'AIGC Product Mix'
             }
         },
         'partners': {
@@ -189,17 +191,18 @@ const translations = {
             'title': '주요 작품',
             'clickToPlay': '비디오 재생하기',
             'items': {
-                'fashion': '패션 숏 비디오',
+                'AIGC': 'AI 제품 전시',
                 '3c': '3C 제품 후반 작업',
                 'product': '제품 홍보',
                 'lookbook': '룩북 촬영 제작',
-                'fresh': '신선한 숏 비디오',
+                'fashion': '네이티브 디지털 휴먼 비디오',
                 'honor': '아너 이어폰',
                 'trend': '트렌드 프리뷰 비디오',
                 'digital': '디지털 휴먼 제품 소개',
                 'live': '트렌디한 라이브 프리뷰',
                 'company': '회사 홍보',
-                'intro': '인트로 & 아웃트로 디자인'
+                'intro': '인트로 & 아웃트로 디자인',
+                'aicut': 'AIGC 제품 믹스'
             }
         },
         'partners': {
@@ -263,17 +266,18 @@ const translations = {
             'title': '作品ギャラリー',
             'clickToPlay': '動画を再生する',
             'items': {
-                'fashion': 'ファッションショートビデオ',
+                'AIGC': 'AI製品展示',
                 '3c': '3C製品ポストプロダクション',
                 'product': '製品プロモーション',
                 'lookbook': 'ルックブック撮影制作',
-                'fresh': 'フレッシュショートビデオ',
+                'fashion': 'ネイティブデジタルヒューマンビデオ',
                 'honor': 'Honorイヤホン',
                 'trend': 'トレンドプレビュービデオ',
                 'digital': 'デジタルヒューマン商品紹介',
                 'live': 'トレンディーライブ予告',
                 'company': '会社プロモーション',
-                'intro': 'イントロ＆アウトロデザイン'
+                'intro': 'イントロ＆アウトロデザイン',
+                'aicut': 'AIGC製品ミックス'
             }
         },
         'partners': {

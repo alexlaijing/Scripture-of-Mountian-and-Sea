@@ -920,192 +920,144 @@ body.loaded {
     animation: fadeInUp 0.8s ease 0.2s forwards;
 }
 
-/* 漂浮动画 */
-@keyframes float {
-    0% {
-        transform: translateY(0px) rotate(-5deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(-3deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(-5deg);
-    }
+/* 漂浮动画参数组 */
+@keyframes float1 {
+    0% { transform: translateY(0px) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(-3deg); }
+    100% { transform: translateY(0px) rotate(-5deg); }
 }
 
 @keyframes float2 {
-    0% {
-        transform: translateY(0px) rotate(3deg);
-    }
-    50% {
-        transform: translateY(-20px) rotate(5deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(3deg);
-    }
+    0% { transform: translateY(0px) rotate(3deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(3deg); }
 }
 
 @keyframes float3 {
-    0% {
-        transform: translateY(0px) rotate(-2deg);
-    }
-    50% {
-        transform: translateY(-10px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(-2deg);
-    }
+    0% { transform: translateY(0px) rotate(-2deg); }
+    50% { transform: translateY(-10px) rotate(0deg); }
+    100% { transform: translateY(0px) rotate(-2deg); }
 }
 
 @keyframes float4 {
-    0% {
-        transform: translateY(0px) rotate(4deg);
-    }
-    50% {
-        transform: translateY(-18px) rotate(6deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(4deg);
-    }
+    0% { transform: translateY(0px) rotate(4deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+    100% { transform: translateY(0px) rotate(4deg); }
 }
+
 @keyframes float5 {
-    0% {
-        transform: translateY(0px) rotate(3deg);
-    }
-    50% {
-        transform: translateY(-20px) rotate(5deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(3deg);
-    }
+    0% { transform: translateY(0px) rotate(3deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+    100% { transform: translateY(0px) rotate(3deg); }
 }
 
 @keyframes float6 {
-    0% {
-        transform: translateY(0px) rotate(-2deg);
-    }
-    50% {
-        transform: translateY(10px) rotate(0deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(-2deg);
-    }
+    0% { transform: translateY(0px) rotate(-2deg); }
+    50% { transform: translateY(10px) rotate(0deg); }
+    100% { transform: translateY(0px) rotate(-2deg); }
 }
 
 @keyframes float7 {
-    0% {
-        transform: translateY(0px) rotate(4deg);
-    }
-    50% {
-        transform: translateY(-18px) rotate(6deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(4deg);
-    }
+    0% { transform: translateY(0px) rotate(4deg); }
+    50% { transform: translateY(-18px) rotate(6deg); }
+    100% { transform: translateY(0px) rotate(4deg); }
 }
+
 @keyframes float8 {
-    0% {
-        transform: translateY(0px) rotate(-5deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(-3deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(-5deg);
-    }
+    0% { transform: translateY(0px) rotate(-5deg); }
+    50% { transform: translateY(-15px) rotate(-3deg); }
+    100% { transform: translateY(0px) rotate(-5deg); }
 }
+
 @keyframes float9 {
-    0% {
-        transform: translateY(0px) rotate(5deg);
-    }
-    50% {
-        transform: translateY(15px) rotate(3deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(5deg);
-    }
+    0% { transform: translateY(0px) rotate(5deg); }
+    50% { transform: translateY(15px) rotate(3deg); }
+    100% { transform: translateY(0px) rotate(5deg); }
 }
+
 @keyframes float10 {
-    0% {
-        transform: translateY(0px) rotate(4deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(6deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(4deg);
-    }
+    0% { transform: translateY(0px) rotate(4deg); }
+    50% { transform: translateY(-15px) rotate(6deg); }
+    100% { transform: translateY(0px) rotate(4deg); }
 }
+
 @keyframes float11 {
-    0% {
-        transform: translateY(0px) rotate(-5deg);
-    }
-    50% {
-        transform: translateY(-5px) rotate(-3deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(-5deg);
-    }
+    0% { transform: translateY(0px) rotate(-5deg); }
+    50% { transform: translateY(-5px) rotate(-3deg); }
+    100% { transform: translateY(0px) rotate(-5deg); }
 }
+
 @keyframes float12 {
-    0% {
-        transform: translateY(0px) rotate(5deg);
-    }
-    50% {
-        transform: translateY(-15px) rotate(3deg);
-    }
-    100% {
-        transform: translateY(0px) rotate(5deg);
-    }
+    0% { transform: translateY(0px) rotate(5deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+    100% { transform: translateY(0px) rotate(5deg); }
 }
 
-.portfolio-item:nth-child(1) {
-    animation: float 6s ease-in-out infinite;
+@keyframes float13 {
+    0% { transform: translateY(0px) rotate(-3deg); }
+    50% { transform: translateY(-12px) rotate(-1deg); }
+    100% { transform: translateY(0px) rotate(-3deg); }
 }
 
-.portfolio-item:nth-child(2) {
-    animation: float2 7s ease-in-out infinite;
+@keyframes float14 {
+    0% { transform: translateY(0px) rotate(4deg); }
+    50% { transform: translateY(10px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(4deg); }
 }
 
-.portfolio-item:nth-child(3) {
-    animation: float3 5s ease-in-out infinite;
+@keyframes float15 {
+    0% { transform: translateY(0px) rotate(-2deg); }
+    50% { transform: translateY(-15px) rotate(0deg); }
+    100% { transform: translateY(0px) rotate(-2deg); }
 }
 
-.portfolio-item:nth-child(4) {
-    animation: float4 8s ease-in-out infinite;
+@keyframes float16 {
+    0% { transform: translateY(0px) rotate(3deg); }
+    50% { transform: translateY(12px) rotate(1deg); }
+    100% { transform: translateY(0px) rotate(3deg); }
 }
-.portfolio-item:nth-child(5) {
-    animation: float5 7s ease-in-out infinite;
-    transform: rotate(-3deg);
+
+/* 应用漂浮动画到所有作品项 */
+.portfolio-item {
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
-.portfolio-item:nth-child(6) {
-    animation: float6 6s ease-in-out infinite;
-    transform: rotate(4deg);
-}
-.portfolio-item:nth-child(7) {
-    animation: float7 8s ease-in-out infinite;
-    transform: rotate(-2deg);
-}
-.portfolio-item:nth-child(8) {
-    animation: float8 7s ease-in-out infinite;
-    transform: rotate(3deg);
-}
-.portfolio-item:nth-child(9) {
-    animation: float9 6s ease-in-out infinite;
-    transform: rotate(-4deg);
-}
-.portfolio-item:nth-child(10) {
-    animation: float10 8s ease-in-out infinite;
-    transform: rotate(2deg);
-}
-.portfolio-item:nth-child(11) {
-    animation: float11 7s ease-in-out infinite;
-    transform: rotate(-3deg);
-}
-.portfolio-item:nth-child(12) {
-    animation: float12 6s ease-in-out infinite;
-    transform: rotate(4deg);
-}
+
+.portfolio-item:nth-child(16n+1) { animation-name: float1; }
+.portfolio-item:nth-child(16n+2) { animation-name: float2; }
+.portfolio-item:nth-child(16n+3) { animation-name: float3; }
+.portfolio-item:nth-child(16n+4) { animation-name: float4; }
+.portfolio-item:nth-child(16n+5) { animation-name: float5; }
+.portfolio-item:nth-child(16n+6) { animation-name: float6; }
+.portfolio-item:nth-child(16n+7) { animation-name: float7; }
+.portfolio-item:nth-child(16n+8) { animation-name: float8; }
+.portfolio-item:nth-child(16n+9) { animation-name: float9; }
+.portfolio-item:nth-child(16n+10) { animation-name: float10; }
+.portfolio-item:nth-child(16n+11) { animation-name: float11; }
+.portfolio-item:nth-child(16n+12) { animation-name: float12; }
+.portfolio-item:nth-child(16n+13) { animation-name: float13; }
+.portfolio-item:nth-child(16n+14) { animation-name: float14; }
+.portfolio-item:nth-child(16n+15) { animation-name: float15; }
+.portfolio-item:nth-child(16n+16) { animation-name: float16; }
+
+/* 为每个作品项添加初始旋转角度 */
+.portfolio-item:nth-child(16n+1) { transform: rotate(-5deg); }
+.portfolio-item:nth-child(16n+2) { transform: rotate(3deg); }
+.portfolio-item:nth-child(16n+3) { transform: rotate(-2deg); }
+.portfolio-item:nth-child(16n+4) { transform: rotate(4deg); }
+.portfolio-item:nth-child(16n+5) { transform: rotate(3deg); }
+.portfolio-item:nth-child(16n+6) { transform: rotate(-2deg); }
+.portfolio-item:nth-child(16n+7) { transform: rotate(4deg); }
+.portfolio-item:nth-child(16n+8) { transform: rotate(-5deg); }
+.portfolio-item:nth-child(16n+9) { transform: rotate(5deg); }
+.portfolio-item:nth-child(16n+10) { transform: rotate(4deg); }
+.portfolio-item:nth-child(16n+11) { transform: rotate(-5deg); }
+.portfolio-item:nth-child(16n+12) { transform: rotate(5deg); }
+.portfolio-item:nth-child(16n+13) { transform: rotate(-3deg); }
+.portfolio-item:nth-child(16n+14) { transform: rotate(4deg); }
+.portfolio-item:nth-child(16n+15) { transform: rotate(-2deg); }
+.portfolio-item:nth-child(16n+16) { transform: rotate(3deg); }
 
 /* 鼠标悬停效果 */
 .hover-lift {
@@ -1685,5 +1637,192 @@ html {
     
     .lang-dropdown a:hover {
         background-color: rgba(255,255,255,0.1);
+    }
+}
+
+/* 查看更多按钮样式 */
+.view-more-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.view-more-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.view-more-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 作品类型标签 */
+.portfolio-type {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+}
+
+/* 图片模态框样式 */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+}
+
+.image-modal-content {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-modal-content img {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.close-image {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.image-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1001;
+    transition: background 0.3s;
+}
+
+.gallery-nav:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.gallery-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+/* 为第13个及以后的作品添加动画效果 */
+@keyframes float13 {
+    0% {
+        transform: translateY(0px) rotate(-3deg);
+    }
+    50% {
+        transform: translateY(-12px) rotate(-1deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(-3deg);
+    }
+}
+
+@keyframes float14 {
+    0% {
+        transform: translateY(0px) rotate(4deg);
+    }
+    50% {
+        transform: translateY(10px) rotate(2deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(4deg);
+    }
+}
+
+@keyframes float15 {
+    0% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(0deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(-2deg);
+    }
+}
+
+.portfolio-item:nth-child(13) {
+    animation: float13 7s ease-in-out infinite;
+    transform: rotate(-3deg);
+}
+
+.portfolio-item:nth-child(14) {
+    animation: float14 6s ease-in-out infinite;
+    transform: rotate(4deg);
+}
+
+.portfolio-item:nth-child(15) {
+    animation: float15 8s ease-in-out infinite;
+    transform: rotate(-2deg);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .view-more-button {
+        padding: 10px 25px;
+        font-size: 14px;
     }
 } 

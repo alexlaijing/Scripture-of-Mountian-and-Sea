@@ -727,4 +727,67 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+});
+
+// 图片展示功能
+const imageModal = document.querySelector('.image-modal');
+const portfolioImage = document.getElementById('portfolio-image');
+const closeImage = document.querySelector('.close-image');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const galleryCounter = document.querySelector('.gallery-counter');
+
+let currentImageIndex = 0;
+let imageSequence = [];
+
+function updateGalleryCounter() {
+    galleryCounter.textContent = `${currentImageIndex + 1} / ${imageSequence.length}`;
+}
+
+function showImage(index) {
+    if (index >= 0 && index < imageSequence.length) {
+        currentImageIndex = index;
+        portfolioImage.src = imageSequence[index];
+        updateGalleryCounter();
+    }
+}
+
+document.querySelectorAll('.portfolio-item[data-type="image"]').forEach(item => {
+    item.addEventListener('click', () => {
+        const fullImageSrc = item.getAttribute('data-full-image');
+        const fileType = fullImageSrc.split('.').pop().toLowerCase();
+        
+        if (fileType === 'pdf') {
+            // 如果是PDF文件，直接在新窗口打开
+            window.open(fullImageSrc, '_blank');
+        } else {
+            imageSequence = [fullImageSrc];
+            currentImageIndex = 0;
+            showImage(0);
+            imageModal.style.display = 'flex';
+        }
+    });
+});
+
+prevBtn.addEventListener('click', () => {
+    showImage(currentImageIndex - 1);
+});
+
+nextBtn.addEventListener('click', () => {
+    showImage(currentImageIndex + 1);
+});
+
+closeImage.addEventListener('click', () => {
+    imageModal.style.display = 'none';
+    imageSequence = [];
+    currentImageIndex = 0;
+});
+
+// 点击模态框外部关闭
+window.addEventListener('click', (e) => {
+    if (e.target === imageModal) {
+        imageModal.style.display = 'none';
+        imageSequence = [];
+        currentImageIndex = 0;
+    }
 }); 
